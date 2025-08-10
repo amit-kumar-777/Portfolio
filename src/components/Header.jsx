@@ -28,6 +28,9 @@ function Header() {
         <NavLink className={({isActive})=>isActive?"opacity-20":" "} to="/contact">
           Contact
         </NavLink>
+        {/* <NavLink className={({isActive})=>isActive?"opacity-20":" "} to="/testing">
+          Testing
+        </NavLink> */}
       </nav>
     </div>
   );

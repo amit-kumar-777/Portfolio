@@ -1,65 +1,57 @@
 import React from "react";
-import Amit from "../assets/Amit.jpeg";
 
 function Hero() {
   return (
-    <>
-      <div className="flex min-h-[500px] overflow-hidden">
-        {/* Left side */}
-        <div className="flex relative w-1/2">
-          <div className="absolute text-4xl top-[160px] left-[100px] font-semibold	">
-            Hello
-            <span className="bg-[#E65C4f] inline-block rounded-full w-2 h-2 ml-1"></span>
-          </div>
+    <div className="flex flex-col md:flex-row h-[80vh] px-6 md:px-16 py-10 items-center relative overflow-hidden">
+      {/* Left Side */}
+      <div className="w-full md:w-1/2 flex flex-col justify-center gap-6 md:pt-16 md:pl-16">
+        <h1 className="text-4xl md:text-5xl font-semibold flex items-center">
+          Greetings...
+          {/* <span className="ml-1 mt-7 bottom-[0px] w-3 h-3 bg-[#E65C4f] rounded-full inline-block"></span> */}
+        </h1>
 
-          <span className="bg-[#E65C4f] absolute inline-block rounded-full w-[120px] h-[4px] top-[260px]"></span>
-          <span className="absolute text-4xl top-[232px] left-[128px] font-mono">
+        <div className="relative mt-2">
+          <span className="mb-2 absolute -left-30 bottom-[0px] w-30 h-1 bg-[#E65C4f] rounded-full"></span>
+          <h2 className="text-3xl md:text-4xl font-mono text-[#E65C4f]">
             I'm Amit Kumar
-          </span>
+          </h2>
+        </div>
 
-          <span className="absolute top-[300px] left-[100px] text-4xl font-bold">
-            Software Developer
-          </span>
+        <h3 className="text-3xl md:text-4xl font-bold">Software Developer</h3>
 
+        <div className="flex gap-4 mt-6 flex-wrap">
           <button
             type="button"
-            className="absolute border-2 top-[380px] border-[#E65C4f] bg-[#E65C4f] px-4 py-2 left-[100px] rounded cursor-pointer hover:bg-transparent hover:text-orange-600"
+            className="border-2 border-[#E65C4f] bg-[#E65C4f] px-6 py-3 rounded hover:bg-transparent hover:text-[#E65C4f] transition"
           >
             Got a project?
           </button>
-          <button
-            type="button"
-            className="absolute border-2 top-[380px] left-[250px] border-[#E65C4f] text-[#E65C4f]  px-3 py-2 rounded cursor-pointer hover:bg-[#E65C4f] hover:text-white"
+          <a
+            href="/AmitKumarSuvarnkarResume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-2 border-[#E65C4f] text-[#E65C4f] px-6 py-3 rounded hover:bg-[#E65C4f] hover:text-white transition"
           >
-            <a
-              href="/AmitKumarSuvarnkarResume.pdf"
-              // download="AmitKumarSuvarnkarResume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              My resume
-            </a>
-          </button>
+            My resume
+          </a>
         </div>
+      </div>
 
-        {/* Right side */}
-        <div className="relative flex w-1/2">
-          <div className="absolute w-120 h-120 inline-block rounded-full bg-[#E65C4f] top-25 left-15">
-            <div className="absolute w-105 h-105 inline-flex rounded-full bg-gray-800 top-8 left-7.5">
-
-              <div className="absolute w-80 h-80 inline-flex rounded-full bg-[#E65C4f] top-12 left-12">
-                <div className="absolute w-60 h-60 inline-flex rounded-full bg-gray-800 top-10 left-10">
-                  <div className="absolute w-40 h-40 inline-flex rounded-full bg-[#E65C4f] top-10 left-10">
-                    {/* <img src={} alt="GoJo"/> */}
-                  </div>
+      {/* Right Side - Decorative Nested Circles */}
+      <div className="w-full md:w-1/2 flex justify-center mt-12 md:mt-0 relative">
+        <div className="relative w-[24rem] h-[24rem] md:w-[28rem] md:h-[28rem] translate-y-24 overflow-hidden">
+          <div className="absolute inset-0 rounded-full bg-[#E65C4f] flex items-center justify-center">
+            <div className="w-[85%] h-[85%] rounded-full bg-gray-800 flex items-center justify-center">
+              <div className="w-[80%] h-[80%] rounded-full bg-[#E65C4f] flex items-center justify-center">
+                <div className="w-[70%] h-[70%] rounded-full bg-gray-800 flex items-center justify-center">
+                  <div className="w-[60%] h-[60%] rounded-full bg-[#E65C4f]"></div>
                 </div>
               </div>
-            
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

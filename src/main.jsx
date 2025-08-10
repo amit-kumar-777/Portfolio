@@ -13,6 +13,7 @@ import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
 import User from "./pages/User.jsx";
 import Projects from "./pages/Projects.jsx";
+import Testing from "./pages/Testing.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
       <Route path="projects" element={<Projects />} />
       <Route path="contact" element={<Contact />} />
       <Route path="user" element={<User />} />
+      <Route path="testing" element={<Testing />} />
     </Route>
   )
 );
