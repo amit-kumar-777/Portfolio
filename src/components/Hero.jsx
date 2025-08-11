@@ -6,7 +6,8 @@ function Hero() {
       {/* Left Side */}
       <div className="w-full md:w-1/2 flex flex-col justify-center gap-6 md:pt-16 md:pl-16">
         <h1 className="text-4xl md:text-5xl font-semibold flex items-center">
-          Hello,
+          Hello
+          <span className=" font-extralight">,</span>
         </h1>
 
         <div className="relative mt-2">
@@ -16,8 +17,8 @@ function Hero() {
           </h2>
         </div>
 
-        <h3 className="text-3xl md:text-4xl font-bold">Software Developer</h3>
-        <span className="absolute top-78 right-199 w-3 h-3 bg-[#E65C4f] rounded-full"></span>
+        <h3 className="text-3xl md:text-4xl font-bold">Software Developer.</h3>
+        {/* <span className="absolute top-78 right-199 w-3 h-3 bg-[#E65C4f] rounded-full"></span> */}
 
         <div className="flex gap-4 mt-6 flex-wrap">
           <button
