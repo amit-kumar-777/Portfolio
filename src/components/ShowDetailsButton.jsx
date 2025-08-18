@@ -8,7 +8,7 @@ function ShowDetailsButton() {
   };
 
   return (
-    <div className="text-white px-6 py-12 w-full max-w-2xl mx-auto rounded-2xl flex flex-col space-y-4 p-6 mr-7">
+    <div className="text-white px-4 py-6 md:px-6 md:py-12 w-full max-w-2xl mx-auto rounded-2xl flex flex-col space-y-4">
       {/* Reusable section component */}
       {[
         {
@@ -57,7 +57,7 @@ function ShowDetailsButton() {
             className="flex justify-between items-center w-full text-left shadow-md hover:shadow-lg transition-shadow duration-300 px-4 py-2 rounded-md bg-gray-900 cursor-pointer"
             onClick={() => handleToggle(key)}
           >
-            <span className="flex items-center gap-2 text-xl font-semibold">
+            <span className="flex items-center gap-2 text-xl font-semibold md:text-xl ">
               <span className="text-orange-500 font-bold">
                 {String(index + 1).padStart(2, "0")}.
               </span>{" "}
@@ -69,7 +69,7 @@ function ShowDetailsButton() {
           <div
             className={`overflow-hidden transition-all duration-500 ease-in-out ${
               activeSection === key
-                ? "max-h-40 opacity-100 mt-4"
+                ? "max-h-96 opacity-100 mt-4"
                 : "max-h-0 opacity-0"
             } pl-7 text-gray-300 space-y-2`}
           >
